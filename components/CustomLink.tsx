@@ -5,8 +5,8 @@ export interface ICustomLinkProps {
   href: string;
   name: string;
   className?: string;
-  activeClassName?: string;
   children?: React.ReactNode;
+  active?: boolean;
 }
 
 export function CustomLink(props: ICustomLinkProps) {
@@ -21,7 +21,13 @@ export function CustomLink(props: ICustomLinkProps) {
   }, []);
   return (
     <Link href={props.href}>
-      <a className={`${props.className} ${isActive && props.activeClassName}`}>
+      <a
+        className={`${
+          isActive || props.active
+            ? props.className + '-active'
+            : props.className
+        }`}
+      >
         {render}
       </a>
     </Link>

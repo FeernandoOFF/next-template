@@ -1,9 +1,24 @@
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   mode: 'jit',
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: {
+          dark: '#c9bb1e',
+          DEFAULT: '#FEF3C7',
+        },
+        secondary: {
+          DEFAULT: '#FF00FF',
+          dark: '#fff',
+        },
+        accent: {
+          DEFAULT: '#FF00FF',
+          dark: '#fff',
+        },
+      },
+    },
   },
   variants: {
     extend: {},

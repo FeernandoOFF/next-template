@@ -4,3 +4,17 @@
 @tailwind utilities;
 
 @import '~antd/dist/antd.css';
+
+body{
+  background-color: #f4f4f4;
+}
+
+.button{
+
+  @apply text-base text-gray-700 font-normal hover:text-gray-400;
+}
+
+.button-active{
+  @apply text-base text-black font-normal hover:text-black;
+
+}

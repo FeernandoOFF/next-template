@@ -10,7 +10,7 @@ export interface ISeoProps {
 export function Seo(props: ISeoProps) {
   return (
     <Head>
-      <title>Title</title>
+      <title>{props.title || 'Basic Title'}</title>
       {props.metaDescription && (
         <meta name="description" content={props.metaDescription} />
       )}
