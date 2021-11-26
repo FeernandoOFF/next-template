@@ -1,0 +1,2 @@
+sudo ln -s ./server_config.com /etc/nginx/sites-enabled/
+sudo ln -s ./server_config.com /etc/nginx/sites-avilable/

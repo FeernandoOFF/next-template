@@ -26,7 +26,7 @@ const Home: NextPage = () => {
           justify="space-between"
         >
           <Col span={8}>
-            <div className="w-[120px] h-[120px] bg-blue-500 rounded-full"></div>
+            <div className="w-[120px] h-[120px] bg-red-500 md:bg-blue-500 rounded-full"></div>
           </Col>
           <Col span={14}>
             <p>
