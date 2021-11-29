@@ -6,15 +6,32 @@
 @import '~antd/dist/antd.css';
 
 body{
-  background-color: #f4f4f4;
+  /* background-color: #fff; */
+  @apply bg-background
 }
 
-.button{
+
+.button-secondary {
 
   @apply text-base text-gray-700 font-normal hover:text-gray-400;
 }
 
-.button-active{
+.button-primary{
   @apply text-base text-black font-normal hover:text-black;
 
+}
+
+.button-link {
+  @apply text-base text-gray-700 font-normal hover:text-gray-400;
+}
+
+.nav-link{
+  @apply text-base text-secondary font-medium hover:text-gray-400 ;
+}
+.nav-link-active{
+  @apply text-base text-accent font-semibold hover:text-gray-400;
+}
+
+.container-size{
+  @apply w-full lg:w-[70%] mx-auto;
 }
